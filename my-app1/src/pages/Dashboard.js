@@ -1,6 +1,18 @@
 import React from 'react'
-
+import { useEffect } from 'react';
 function Dashboard() {
+//   useEffect(() => {
+//   const interval = setInterval(() => {
+//     const el = document.getElementById('areaChart');
+//     if (el && window.Chart) {
+//       //new Chart(el.getContext('2d'), { });
+//       clearInterval(interval);
+//     }
+//   }, 100); // try every 100ms
+
+//   return () => clearInterval(interval);
+// }, []);
+
   return (
 
     <>
@@ -105,7 +117,7 @@ function Dashboard() {
             <div className="box-body chat" id="chat-box">
               
               <div className="item">
-                <img src="dist/img/user4-128x128.jpg" alt="user image" className="online"/>
+                <img src="/dist/img/user4-128x128.jpg" alt="user image" className="online"/>
 
                 <p className="message">
                   <a href="#" className="name">
@@ -131,7 +143,7 @@ function Dashboard() {
               </div>
               
               <div className="item">
-                <img src="dist/img/user3-128x128.jpg" alt="user image" className="offline"/>
+                <img src="/dist/img/user3-128x128.jpg" alt="user image" className="offline"/>
 
                 <p className="message">
                   <a href="#" className="name">
@@ -145,7 +157,7 @@ function Dashboard() {
               </div>
               
               <div className="item">
-                <img src="dist/img/user2-160x160.jpg" alt="user image" className="offline"/>
+                <img src="/dist/img/user2-160x160.jpg" alt="user image" className="offline"/>
 
                 <p className="message">
                   <a href="#" className="name">
